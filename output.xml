@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.12.3 on linux)" generated="2025-10-30T11:39:16.321429" rpa="false" schemaversion="5">
+<suite id="s1" name="Main" source="/home/luxu/Desktop/infoeste_robot_framework/main.robot">
+<test id="s1-t1" name="Teste 01" line="52">
+<kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
+<msg time="2025-10-30T11:39:16.493992" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-10-30T11:39:16.493679" elapsed="0.543467"/>
+</kw>
+<kw name="Acessar o site">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-10-30T11:39:17.038894" level="INFO">Opening url 'https://demoqa.com/automation-practice-form'</msg>
+<arg>url=${site}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-10-30T11:39:17.038528" elapsed="5.638327"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-30T11:39:27.677761" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-30T11:39:22.677242" elapsed="5.000957"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>locator=(//div[@id='dateOfBirth-wrapper']//div)[1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-10-30T11:39:27.678584" elapsed="0.324921"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-30T11:39:28.004656" level="INFO">Typing text 'Luciano' into text field '//input[@placeholder='First Name']'.</msg>
+<arg>locator=//input[@placeholder='First Name']</arg>
+<arg>text=Luciano</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-30T11:39:28.003989" elapsed="0.127839"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-30T11:39:28.132629" level="INFO">Typing text 'Martins' into text field '//input[@placeholder='Last Name']'.</msg>
+<arg>locator=//input[@placeholder='Last Name']</arg>
+<arg>text=Martins</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-30T11:39:28.132168" elapsed="0.078422"/>
+</kw>
+<status status="PASS" start="2025-10-30T11:39:17.037947" elapsed="11.172943"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${check_home}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-10-30T11:39:28.211435" elapsed="0.024692"/>
+</kw>
+<kw name="Preencher email">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-30T11:39:28.237557" level="INFO">Typing text 'zicadopv@gmail.com' into text field '//input[@class='mr-sm-2 form-control']'.</msg>
+<arg>locator=//input[@class='mr-sm-2 form-control']</arg>
+<arg>text=zicadopv@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-30T11:39:28.237131" elapsed="0.075387"/>
+</kw>
+<status status="PASS" start="2025-10-30T11:39:28.236634" elapsed="0.076268"/>
+</kw>
+<kw name="Preencher celular">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-30T11:39:28.314271" level="INFO">Typing text '(18) 98806-3287' into text field '//input[@placeholder='Mobile Number']'.</msg>
+<arg>locator=//input[@placeholder='Mobile Number']</arg>
+<arg>text=(18) 98806-3287</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-30T11:39:28.313886" elapsed="0.064501"/>
+</kw>
+<status status="PASS" start="2025-10-30T11:39:28.313363" elapsed="0.065263"/>
+</kw>
+<kw name="Prencher pronomes">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-30T11:39:28.380126" level="INFO">Typing text 'Commerce' into text field '(//label[normalize-space(text())='Subjects']/following::input)[1]'.</msg>
+<arg>locator=(//label[normalize-space(text())='Subjects']/following::input)[1]</arg>
+<arg>text=Commerce</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-30T11:39:28.379662" elapsed="0.159335"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-10-30T11:39:28.540700" level="INFO">Sending key(s) ('TAB',) to (//label[normalize-space(text())='Subjects']/following::input)[1] element.</msg>
+<msg time="2025-10-30T11:39:28.917719" level="INFO">Pressing special key TAB to element.</msg>
+<msg time="2025-10-30T11:39:28.918281" level="INFO">Releasing special key TAB.</msg>
+<arg>(//label[normalize-space(text())='Subjects']/following::input)[1]</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-10-30T11:39:28.539601" elapsed="0.416338"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-10-30T11:39:28.956966" level="INFO">Typing text 'English' into text field '(//label[normalize-space(text())='Subjects']/following::input)[1]'.</msg>
+<arg>locator=(//label[normalize-space(text())='Subjects']/following::input)[1]</arg>
+<arg>text=English</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-10-30T11:39:28.956385" elapsed="0.062453"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2025-10-30T11:39:29.019619" level="INFO">Sending key(s) ('TAB',) to (//label[normalize-space(text())='Subjects']/following::input)[1] element.</msg>
+<msg time="2025-10-30T11:39:29.304198" level="INFO">Pressing special key TAB to element.</msg>
+<msg time="2025-10-30T11:39:29.304603" level="INFO">Releasing special key TAB.</msg>
+<arg>(//label[normalize-space(text())='Subjects']/following::input)[1]</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2025-10-30T11:39:29.019105" elapsed="0.303708"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-30T11:39:34.324036" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-30T11:39:29.323313" elapsed="5.001157"/>
+</kw>
+<status status="PASS" start="2025-10-30T11:39:28.379103" elapsed="5.945645"/>
+</kw>
+<kw name="Fazer upload de imagem">
+<kw name="Choose File" owner="SeleniumLibrary">
+<msg time="2025-10-30T11:39:34.326398" level="INFO">Sending /home/luxu/Desktop/infoeste_robot_framework/unoeste.png to browser.</msg>
+<arg>locator=//input[@type='file']</arg>
+<arg>file_path=/home/luxu/Desktop/infoeste_robot_framework/unoeste.png</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<status status="PASS" start="2025-10-30T11:39:34.325851" elapsed="0.055998"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-10-30T11:39:36.383043" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-10-30T11:39:34.382292" elapsed="2.001264"/>
+</kw>
+<status status="PASS" start="2025-10-30T11:39:34.325216" elapsed="2.058621"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-10-30T11:39:36.384412" elapsed="0.137189"/>
+</kw>
+<doc>Esse teste serve para acessar o form</doc>
+<tag>forms</tag>
+<status status="PASS" start="2025-10-30T11:39:16.492568" elapsed="20.029415"/>
+</test>
+<status status="PASS" start="2025-10-30T11:39:16.325232" elapsed="20.197629"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">forms</stat>
+</tag>
+<suite>
+<stat name="Main" id="s1" pass="1" fail="0" skip="0">Main</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
