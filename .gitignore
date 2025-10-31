@@ -1,4 +1,6 @@
 .venv
-.png
-.html
+*.png
+log.html
+output.xml
+report.html
 __pycache__/
