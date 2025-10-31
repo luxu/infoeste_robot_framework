@@ -1,11 +1,6 @@
 *** Settings ***
 
-Resource     main_new.robot
-Variables    variables.robot
+Resource   main.robot
+Library    SeleniumLibrary
+Library    Dialogs
 
-*** Variables ***
-
-
-*** Test Cases ***
-Log
-    Log    ${site}

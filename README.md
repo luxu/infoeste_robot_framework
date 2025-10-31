@@ -1,17 +1,32 @@
 ## Mini-curso **Robot Framework** - Infoeste 2005
 
-1 - Instalar o python com o path selecionado
-2 - Instalar as libs:
-    ```code
-    pip install robotframework
-    ```
-    pip install robotframework-seleniumlibrary
-3 - Driver do firefox:
+- Instalar o python com o path selecionado
+- Instalar as libs:
+```bash
+
+pip install robotframework
+```
+```bash
+
+pip install robotframework-seleniumlibrary
+```
+- Driver do firefox:
     https://github.com/mozilla/geckodriver/releases
-4 - Para capturar os xpaths da página
+- Para capturar os xpaths da página
     Extensões do Chrome:
-        letXPath
+```
+letXPath
+```
     Extensões do Firefox:
-        TruePath
-5 - Incluir a extensão no vscode
-    Robot Framework Language Server
+```
+TruePath
+```
+- Incluir a extensão no vscode
+```
+Robot Framework Language Server
+```
+
+#### #### #### #### #### #### ATENÇÃO #### #### #### #### #### #### #### 
+O atributo: *Pause Execution* só funciona no linux se tiver instalado o tkinter pelo comando:
+- sudo apt install python3-tk 
+e depois importado a lib: Dialogs
